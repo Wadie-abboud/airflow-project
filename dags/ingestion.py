@@ -85,7 +85,7 @@ def store_log_counts(**context):
     
     return dataset_content
 
-    with DAG(
+with DAG(
     'process_logs',
     default_args=default_args,
     description='A DAG to process and analyze log files',
